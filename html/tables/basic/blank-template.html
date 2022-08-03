@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Table template</title>
-    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+    <link href="minimal-table.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <h1>Table template</h1>
-
-
+    <table>
+      <tr>
+        <th colspan="4">Hi, I'm your first cell.</th>
+        <tr>
+        <th>I'm your second cell.</th>
+        <th>I'm your third cell.</th>
+        <th>I'm your fourth cell.</th>
+        </tr>
+      </tr>
+      <tr>
+        <th rowspan="2">Hi, I'm your first cell.</th>
+        <td>I'm your second cell.</td>
+        <td>I'm your third cell.</td>
+        <td>I'm your fourth cell.</td>
+      </tr>
+      <tr>
+        <th>Hi, I'm your first cell.</th>
+        <td>I'm your second cell.</td>
+        <td>I'm your third cell.</td>
+        <td>I'm your fourth cell.</td>
+      </tr>
+    </table>
+    <table>
+      <colgroup>
+        <col>
+        <col style="background-color: yellow" span="2">
+      </colgroup>
+      <tr>
+        <th>Data 1</th>
+        <th>Data 2</th>
+      </tr>
+      <tr>
+        <td>Calcutta</td>
+        <td>Orange</td>
+      </tr>
+      <tr>
+        <td>Robots</td>
+        <td>Jazz</td>
+      </tr>
+    </table>
+    
   </body>
 </html>
